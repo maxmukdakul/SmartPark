@@ -43,6 +43,17 @@ class ParkingManager {
         return parkingSpaces.first { $0.name == active.parkingName }
     }
 
+    var isOnCooldown: Bool {
+        guard let lastCancel = lastCancellationTime else { return false }
+        return Date().timeIntervalSince(lastCancel) < 3600
+    }
+
+    var cooldownRemainingMinutes: Int {
+        guard let lastCancel = lastCancellationTime else { return 0 }
+        let elapsed = Date().timeIntervalSince(lastCancel)
+        return max(0, Int(ceil((3600 - elapsed) / 60)))
+    }
+
     // MARK: - Booking
 
     func bookSpace(_ space: ParkingSpace, duration: Int, startTime: Date) {
