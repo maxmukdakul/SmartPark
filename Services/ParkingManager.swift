@@ -18,16 +18,32 @@ class ParkingManager {
     var notificationsEnabled: Bool = true
     var favoriteSpaceIDs: Set<UUID> = []
     var lastBookedSpaceID: UUID?
+    var lastCancellationTime: Date?
 
     private let locationManager = CLLocationManager()
 
     init() {
         requestNotificationPermission()
         locationManager.requestWhenInUseAuthorization()
+        expireOldReservations()
     }
 
     var activeReservations: [Reservation] {
         reservations.filter { $0.status == .active }
+    }
+
+    func expireOldReservations() {
+        let now = Date()
+        var expiredAny = false
+        for i in reservations.indices {
+            if reservations[i].status == .active && now >= reservations[i].endTime {
+                reservations[i].status = .completed
+                expiredAny = true
+            }
+        }
+        if expiredAny && activeReservations.isEmpty {
+            lastBookedSpaceID = nil
+        }
     }
 
     var pastReservations: [Reservation] {
@@ -78,6 +94,7 @@ class ParkingManager {
         guard reservations[index].canCancel else { return }
         reservations[index].status = .cancelled
         lastBookedSpaceID = nil
+        lastCancellationTime = Date()
         UNUserNotificationCenter.current().removePendingNotificationRequests(
             withIdentifiers: [id.uuidString]
         )
