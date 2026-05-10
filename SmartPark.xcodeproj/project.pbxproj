@@ -6,8 +6,49 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		505631E92FAF01C9005EBAB4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505631E72FAF01BD005EBAB4 /* LoginView.swift */; };
+		505631EC2FAF01F7005EBAB4 /* ParkingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505631EA2FAF01F2005EBAB4 /* ParkingMapView.swift */; };
+		505631EF2FAF021B005EBAB4 /* HistoryLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505631ED2FAF020A005EBAB4 /* HistoryLogView.swift */; };
+		505631F42FAF0A9E005EBAB4 /* ParkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505631F32FAF0A9E005EBAB4 /* ParkingManager.swift */; };
+		505631F82FAF0E69005EBAB4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505631F72FAF0E69005EBAB4 /* AuthManager.swift */; };
+		505631FA2FAF0E98005EBAB4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505631F92FAF0E98005EBAB4 /* ProfileView.swift */; };
+		505632012FB03073005EBAB4 /* MapPinViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632002FB03073005EBAB4 /* MapPinViews.swift */; };
+		505632032FB03074005EBAB4 /* ActiveBookingBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632022FB03074005EBAB4 /* ActiveBookingBanner.swift */; };
+		505632052FB03074005EBAB4 /* ActiveBookingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632042FB03074005EBAB4 /* ActiveBookingDetailView.swift */; };
+		505632072FB03075005EBAB4 /* ReservationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632062FB03075005EBAB4 /* ReservationDetailView.swift */; };
+		505632092FB03076005EBAB4 /* SharedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632082FB03076005EBAB4 /* SharedComponents.swift */; };
+		5056320B2FB03077005EBAB4 /* ReservationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5056320A2FB03077005EBAB4 /* ReservationCard.swift */; };
+		5056320D2FB03078005EBAB4 /* GoogleAccountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5056320C2FB03078005EBAB4 /* GoogleAccountPicker.swift */; };
+		5056320F2FB03079005EBAB4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5056320E2FB03079005EBAB4 /* SplashView.swift */; };
+		505632112FB0307A005EBAB4 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632102FB0307A005EBAB4 /* MainTabView.swift */; };
+		505632132FB0307A005EBAB4 /* ParkingSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632122FB0307A005EBAB4 /* ParkingSpace.swift */; };
+		505632152FB0307B005EBAB4 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632142FB0307B005EBAB4 /* Reservation.swift */; };
+		505632172FB0307C005EBAB4 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632162FB0307C005EBAB4 /* UserProfile.swift */; };
+		505632192FB0307C005EBAB4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505632182FB0307C005EBAB4 /* MockData.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		505631D32FAF0097005EBAB4 /* SmartPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		505631E72FAF01BD005EBAB4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		505631EA2FAF01F2005EBAB4 /* ParkingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapView.swift; sourceTree = "<group>"; };
+		505631ED2FAF020A005EBAB4 /* HistoryLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLogView.swift; sourceTree = "<group>"; };
+		505631F32FAF0A9E005EBAB4 /* ParkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingManager.swift; sourceTree = "<group>"; };
+		505631F72FAF0E69005EBAB4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		505631F92FAF0E98005EBAB4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		505632002FB03073005EBAB4 /* MapPinViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinViews.swift; sourceTree = "<group>"; };
+		505632022FB03074005EBAB4 /* ActiveBookingBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveBookingBanner.swift; sourceTree = "<group>"; };
+		505632042FB03074005EBAB4 /* ActiveBookingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveBookingDetailView.swift; sourceTree = "<group>"; };
+		505632062FB03075005EBAB4 /* ReservationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailView.swift; sourceTree = "<group>"; };
+		505632082FB03076005EBAB4 /* SharedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComponents.swift; sourceTree = "<group>"; };
+		5056320A2FB03077005EBAB4 /* ReservationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationCard.swift; sourceTree = "<group>"; };
+		5056320C2FB03078005EBAB4 /* GoogleAccountPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAccountPicker.swift; sourceTree = "<group>"; };
+		5056320E2FB03079005EBAB4 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		505632102FB0307A005EBAB4 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		505632122FB0307A005EBAB4 /* ParkingSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpace.swift; sourceTree = "<group>"; };
+		505632142FB0307B005EBAB4 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		505632162FB0307C005EBAB4 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		505632182FB0307C005EBAB4 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -34,6 +75,9 @@
 			children = (
 				505631D52FAF0097005EBAB4 /* SmartPark */,
 				505631D42FAF0097005EBAB4 /* Products */,
+				505631FB2FAF5522005EBAB4 /* Views */,
+				505631FC2FAF5523005EBAB4 /* Models */,
+				505631FD2FAF5523005EBAB4 /* Services */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +87,46 @@
 				505631D32FAF0097005EBAB4 /* SmartPark.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		505631FB2FAF5522005EBAB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				505631E72FAF01BD005EBAB4 /* LoginView.swift */,
+				505631EA2FAF01F2005EBAB4 /* ParkingMapView.swift */,
+				505631ED2FAF020A005EBAB4 /* HistoryLogView.swift */,
+				505631F92FAF0E98005EBAB4 /* ProfileView.swift */,
+				505632002FB03073005EBAB4 /* MapPinViews.swift */,
+				505632022FB03074005EBAB4 /* ActiveBookingBanner.swift */,
+				505632042FB03074005EBAB4 /* ActiveBookingDetailView.swift */,
+				505632062FB03075005EBAB4 /* ReservationDetailView.swift */,
+				505632082FB03076005EBAB4 /* SharedComponents.swift */,
+				5056320A2FB03077005EBAB4 /* ReservationCard.swift */,
+				5056320C2FB03078005EBAB4 /* GoogleAccountPicker.swift */,
+				5056320E2FB03079005EBAB4 /* SplashView.swift */,
+				505632102FB0307A005EBAB4 /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		505631FC2FAF5523005EBAB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				505632122FB0307A005EBAB4 /* ParkingSpace.swift */,
+				505632142FB0307B005EBAB4 /* Reservation.swift */,
+				505632162FB0307C005EBAB4 /* UserProfile.swift */,
+				505632182FB0307C005EBAB4 /* MockData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		505631FD2FAF5523005EBAB4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				505631F32FAF0A9E005EBAB4 /* ParkingManager.swift */,
+				505631F72FAF0E69005EBAB4 /* AuthManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +203,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505631F42FAF0A9E005EBAB4 /* ParkingManager.swift in Sources */,
+				5056320F2FB03079005EBAB4 /* SplashView.swift in Sources */,
+				505632152FB0307B005EBAB4 /* Reservation.swift in Sources */,
+				505631FA2FAF0E98005EBAB4 /* ProfileView.swift in Sources */,
+				505632012FB03073005EBAB4 /* MapPinViews.swift in Sources */,
+				505631F82FAF0E69005EBAB4 /* AuthManager.swift in Sources */,
+				505632032FB03074005EBAB4 /* ActiveBookingBanner.swift in Sources */,
+				505632132FB0307A005EBAB4 /* ParkingSpace.swift in Sources */,
+				505632072FB03075005EBAB4 /* ReservationDetailView.swift in Sources */,
+				505631E92FAF01C9005EBAB4 /* LoginView.swift in Sources */,
+				505632112FB0307A005EBAB4 /* MainTabView.swift in Sources */,
+				505632172FB0307C005EBAB4 /* UserProfile.swift in Sources */,
+				505632092FB03076005EBAB4 /* SharedComponents.swift in Sources */,
+				505631EC2FAF01F7005EBAB4 /* ParkingMapView.swift in Sources */,
+				505631EF2FAF021B005EBAB4 /* HistoryLogView.swift in Sources */,
+				5056320D2FB03078005EBAB4 /* GoogleAccountPicker.swift in Sources */,
+				505632052FB03074005EBAB4 /* ActiveBookingDetailView.swift in Sources */,
+				5056320B2FB03077005EBAB4 /* ReservationCard.swift in Sources */,
+				505632192FB0307C005EBAB4 /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +353,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = SmartPark;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -270,13 +374,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.4;
 			};
 			name = Debug;
@@ -292,6 +397,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = SmartPark;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,13 +418,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.4;
 			};
 			name = Release;
