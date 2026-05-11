@@ -47,6 +47,11 @@ struct SmartParkApp: App {
                     parkingManager.expireOldReservations()
                 }
             }
+            .onChange(of: authManager.isAuthenticated) { _, isAuth in
+                if isAuth, let email = authManager.currentUser?.email {
+                    parkingManager.loadData(for: email)
+                }
+            }
         }
     }
 }

@@ -141,6 +141,9 @@ struct ProfileView: View {
             .alert("Sign Out", isPresented: $showLogoutAlert) {
                 Button("Cancel", role: .cancel) { }
                 Button("Sign Out", role: .destructive) {
+                    if let email = authManager.currentUser?.email {
+                        parkingManager.saveData(for: email)
+                    }
                     withAnimation {
                         authManager.signOut()
                     }

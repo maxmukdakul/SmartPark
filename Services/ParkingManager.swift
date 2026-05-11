@@ -11,6 +11,13 @@ import UserNotifications
 import MapKit
 import CoreLocation
 
+private struct UserParkingData {
+    var reservations: [Reservation]
+    var favoriteSpaceIDs: Set<UUID>
+    var lastBookedSpaceID: UUID?
+    var lastCancellationTime: Date?
+}
+
 @Observable
 class ParkingManager {
     var parkingSpaces: [ParkingSpace] = MockData.sampleParkingSpaces
@@ -21,10 +28,35 @@ class ParkingManager {
     var lastCancellationTime: Date?
 
     private let locationManager = CLLocationManager()
+    private var userDataStore: [String: UserParkingData] = [:]
 
     init() {
         requestNotificationPermission()
         locationManager.requestWhenInUseAuthorization()
+        expireOldReservations()
+    }
+
+    func saveData(for email: String) {
+        userDataStore[email] = UserParkingData(
+            reservations: reservations,
+            favoriteSpaceIDs: favoriteSpaceIDs,
+            lastBookedSpaceID: lastBookedSpaceID,
+            lastCancellationTime: lastCancellationTime
+        )
+    }
+
+    func loadData(for email: String) {
+        if let data = userDataStore[email] {
+            reservations = data.reservations
+            favoriteSpaceIDs = data.favoriteSpaceIDs
+            lastBookedSpaceID = data.lastBookedSpaceID
+            lastCancellationTime = data.lastCancellationTime
+        } else {
+            reservations = MockData.sampleHistory
+            favoriteSpaceIDs = []
+            lastBookedSpaceID = nil
+            lastCancellationTime = nil
+        }
         expireOldReservations()
     }
 

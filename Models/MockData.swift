@@ -33,7 +33,7 @@ class MockData {
     }
 
     static let sampleHistory = [
-        Reservation(parkingName: "CentralWorld Parking", date: Date().addingTimeInterval(-86400 * 1), startTime: makeTime(hour: 13, minute: 0, daysAgo: 1), durationHours: 3, totalCost: 120.0, status: .active),
+        Reservation(parkingName: "CentralWorld Parking", date: Date().addingTimeInterval(-86400 * 1), startTime: makeTime(hour: 13, minute: 0, daysAgo: 1), durationHours: 3, totalCost: 120.0, status: .completed),
         Reservation(parkingName: "Kasetsart University", date: Date().addingTimeInterval(-86400 * 3), startTime: makeTime(hour: 8, minute: 30, daysAgo: 3), durationHours: 5, totalCost: 75.0, status: .completed),
         Reservation(parkingName: "Siam Paragon Parking", date: Date().addingTimeInterval(-86400 * 5), startTime: makeTime(hour: 17, minute: 0, daysAgo: 5), durationHours: 2, totalCost: 120.0, status: .completed),
         Reservation(parkingName: "Terminal 21 Asok", date: Date().addingTimeInterval(-86400 * 8), startTime: makeTime(hour: 10, minute: 0, daysAgo: 8), durationHours: 4, totalCost: 180.0, status: .completed),
